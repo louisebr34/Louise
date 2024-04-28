@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha 5 - Semana 1</title>
+</head>
+<body>
+    <h1>Lista</h1>
+
+    <script>
+        var letras = [];
+
+        function recebeLetra() {
+            for (var i = 0; i < 10; i++) {
+                var letra = prompt("Digite uma letra:");
+                letras.push(letra);
+            }
+        }
+
+        recebeLetra();
+
+        document.write("<p>A primeira letra digitada: " + letras[0] + "</p>");
+        document.write("<p>A quarta letra digitada: " + letras[3] + "</p>");
+        document.write("<p>A quinta letra digitada: " + letras[4] + "</p>");
+        document.write("<p>A última letra digitada: " + letras[letras.length - 1] + "</p>");
+        document.write("<p>Tamanho da lista de letras: " + letras.length + "</p>");
+    </script>
+</body>
+</html>
